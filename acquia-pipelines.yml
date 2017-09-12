@@ -16,8 +16,8 @@ events:
             script:
               - cd $SOURCE_DIR
               - composer install
-              - source ${BLT_DIR}/scripts/pipelines/setup_environment
-              - source ${BLT_DIR}/scripts/pipelines/setup_project
+              - source ${BLT_DIR}/scripts/pipelines/setup_env
+              - source ${BLT_DIR}/scripts/pipelines/setup_app
               - composer install-phantomjs
 
         # Install Lightning and copy prod database.
