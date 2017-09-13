@@ -33,7 +33,7 @@ events:
               # Run a specific Lightning test:
               # - Panelizer is enabled for landing pages (1e244c89)
               - cat $SOURCE_DIR/tests/behat/local.yml
-              - ../vendor/bin/behat --config $SOURCE_DIR/tests/behat/local.yml --tags=paragraphs
+              - ../vendor/bin/behat --config $SOURCE_DIR/tests/behat/local.yml --tags=paragraphs -p local
         - build-artifact:
             type: script
             script:
