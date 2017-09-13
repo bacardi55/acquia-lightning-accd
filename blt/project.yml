@@ -36,5 +36,7 @@ modules:
   prod:
     enable: [acquia_connector, shield]
     uninstall: [devel, views_ui]
+#cm:
+#  allow-overrides: true
 cm:
-  allow-overrides: true
+  strategy: config-split
