@@ -38,6 +38,7 @@ events:
         - tests:
             type: script
             script:
+              - cd ${SOURCE_DIR}; blt setup:behat
               - ls /mnt/tmp/local.prod/source/tests/behat
               - cat /mnt/tmp/local.prod/source/tests/behat/local.yml
               - source ${BLT_DIR}/scripts/pipelines/tests
