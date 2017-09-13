@@ -10,9 +10,13 @@ project:
 git:
   default_branch: master
   remotes: {  }
+  remotes:
+    cloud: 'cddemo26@svn-23449.prod.hosting.acquia.com:cddemo26.git'
+    github: 'git@github.com:bacardi55/acquia-lightning-accd.git'
+
 drush:
   aliases:
-    remote: '${project.machine_name}.test'
+    remote: 'cddemo26.test'
     local: self
     ci: self
   default_alias: '${drush.aliases.local}'
