@@ -27,7 +27,8 @@ events:
         - tests:
             type: script
             script:
-              - ls /mnt/tmp/local.prod/*/*
+              - ls /mnt/tmp/local.prod/source/behat
+              - cat /mnt/tmp/local.prod/source/behat/local.yml
               - source ${BLT_DIR}/scripts/pipelines/tests
         - build-artifact:
             type: script
