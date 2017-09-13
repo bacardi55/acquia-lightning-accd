@@ -27,6 +27,7 @@ events:
         - tests:
             type: script
             script:
+              - ls /mnt/tmp/local.prod/*/*
               - source ${BLT_DIR}/scripts/pipelines/tests
         - build-artifact:
             type: script
